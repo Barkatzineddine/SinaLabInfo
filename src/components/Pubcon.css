@@ -1,0 +1,39 @@
+.pub-container-info{
+    display: flex;
+    background: white;
+    width: 70%;
+    gap: 50px;
+    max-height: 320px;
+    overflow: hidden;
+}
+.pub-container-info>div>h3{
+    margin: 20px auto;
+}
+@media screen and (max-width: 1100px){
+    .pub-container-info{
+        flex-direction: column;
+    width: 90%;
+    align-items: center;
+    }
+   
+    .text-pub-container-info{
+        width: 80%;
+    }
+}
+.img-pub-container-info>img{
+    max-height: 300px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 450px){
+    .pub-container-info{
+        width: 70%;
+        text-align: center;
+    }
+    .img-pub-container-info>img{
+        width: 250px;
+    }
+    .img-pub-container-info{
+        display: flex;
+        justify-content: center;
+    }
+}

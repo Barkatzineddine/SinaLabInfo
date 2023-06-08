@@ -1,0 +1,55 @@
+.pub-box{
+  
+    padding: 30px 25px;
+    filter: drop-shadow(5px 3px 14px rgba(206, 206, 206, 0.56));
+    background: #F2F2F2;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 200px;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+
+.pub-box p{
+  
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.pub-box a{
+  
+   position: absolute;
+   bottom: 5px;
+   left: 10px;
+}
+
+
+.pub-title{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+color: #740606;
+}
+.pub-txt{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+
+color: #454545;
+padding: 10px 0 10px;
+}
+@media screen  and (max-width:600px){
+    .pub-box{
+        width: 70%;
+    }
+}
+@media screen  and (max-width:450px){
+    .pub-box{
+        width: 90%;
+    }
+}

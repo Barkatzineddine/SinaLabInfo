@@ -1,0 +1,195 @@
+.about-lab{
+    width: 80%;
+    margin: 150px auto 30px;
+    border-left: 2px solid black;
+}
+.about-connaitre{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.about-lab-title{
+    text-align: center;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 39px;
+color: #000000;
+
+}
+.about-con-txt{
+    width: 40%;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+
+color: #454545;
+margin-top: 40px;
+
+}
+.about-con-img{
+    margin-top: 20px;
+    transform: rotateX(20deg);
+    width: 40%;
+}
+.back-con-2{
+    width: 472px;
+    margin-top: 20px;
+    border-radius: 14px;
+}
+.time-work-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.time-work-box{
+    flex-basis: 12.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.day-work{
+    padding: 3rem 0.8rem;
+    background: #740606;
+    border-radius: 50%;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    width: fit-content;
+    align-self: center;
+}
+.time-txt, .time-txt-top{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+text-align: center;
+
+color: #000000;
+
+}
+.time-txt-top{
+    margin-top: 10px;
+}
+.time-work-con-title{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 39px;
+margin: 110px 20px 40px ;
+text-align: center;
+}
+.con-maps{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #740606;
+    margin: 50px auto 200px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.con-maps>img{
+   
+
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+    display: none;
+
+}
+.con-maps>p{
+    width: 40%;
+    padding: 80px 40px;
+    color: white;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 37px;
+}
+.about-lab-title-maps{
+    padding-left: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 39px;
+    text-decoration: underline;
+    margin-top: 70px;
+}
+@media screen and (max-width:1400px) {
+    .about-connaitre{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+    }
+    .about-lab{
+        border-left: none;
+    }
+    .about-con-txt{
+        width: 90%;
+    }
+    .about-con-img>img{
+        width: 100%;
+    }
+    .time-work-con-title{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1200px){
+    .con-maps>p{
+        font-size: 25px;
+        padding: 60px 15px;
+    }
+    .about-con-img{
+        width: 100%;
+    }
+    .time-work-container{
+        gap: 15px;
+    }
+    .time-work-con-title{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:900px){
+    .about-lab-title-maps{
+        font-size: 25px;
+        font-weight: 500;
+        padding-left: 15px;
+    }
+    .con-maps::after{
+        display: none;
+    }
+    .time-work-container{
+        gap: 5px;
+    }
+    .con-maps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: auto;
+    }
+    .con-maps>img{
+        display: block;
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .con-maps>p{
+        font-size: 20px;
+        width: 80%;
+        padding-bottom: 20px;
+    }
+   
+}

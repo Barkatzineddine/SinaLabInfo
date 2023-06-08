@@ -1,0 +1,202 @@
+
+.contianer-patient{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 100px ;
+    
+    
+}
+.container-pa{
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    box-sizing: border-box;
+}
+.cont-pa{
+    display: flex;
+    justify-content: center;
+    margin-block: 30px;
+}
+.text-pa{
+    flex-basis: 45%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.image-pa{
+    width: 500px;
+}
+.par-pa{
+    width: 90%;
+    font-weight: 500;
+font-size: 13px;
+line-height: 22px;
+
+color: #454545;
+box-sizing: border-box;
+padding: 10px ;
+align-self: center;
+}
+.btn-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+   
+    gap: 10px;
+
+}
+
+
+.title-patient{
+    margin-bottom: 40px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    width: fit-content;
+    font-size: 30px;
+}
+.title-patient::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #740606;
+    position: absolute;
+    top: 50px;
+    left: 2px;
+    border-radius: 15px;
+}
+.btn-cont>a>button{
+    background: #740606;
+box-shadow: 2px 5px 20px rgba(116, 6, 6, 0.7);
+border-radius: 5px;
+padding: 10px 10px;
+
+height: 56px;
+color: white;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 36px;
+
+}
+.btn-cont>span{
+    display: flex;
+    gap: 5px;
+   
+}
+.faq-btn{
+    background: #31568C;
+    box-shadow: 2px 5px 20px rgba(0, 111, 191, 0.5);
+    border-radius: 5px;
+    padding: 10px 15px;
+  
+    height: 56px;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 36px;
+color: white;
+}
+.res-btn{
+    background: #31568C;
+box-shadow: 2px 5px 20px rgba(0, 111, 191, 0.5);
+border-radius: 5px;
+width: 196px;
+height: 56px;
+padding: 10px 5px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 36px;
+color: white;
+}
+
+@media screen  and (max-width:1200px){
+    .cont-pa{
+        flex-direction: column;
+        align-items: center;
+
+        
+    }
+    .btn-cont{
+        margin-bottom: 60px;
+        align-items: center;
+    }
+    .par-pa{
+        
+        width: 70%;
+       margin: 2px auto;
+    }
+}
+@media screen  and (max-width:900px){
+    .cont-pa{
+        flex-direction: column;
+        align-items: center;
+
+        
+    }
+    .par-pa{
+        font-size: 18px;
+        margin: 30px auto;
+        width: 90%;
+    }
+    .btn-cont{
+        margin: 50px auto 30px;
+    }
+    .image-pa{
+        width: 100%;
+        box-sizing: border-box;
+        
+    }
+}
+@media screen  and (max-width:600px){
+   .par-pa{
+    font-size: 15px;
+    width: 100%;
+    margin: 5px;
+   }
+   .cont-pa{
+    gap: 5px;
+   }
+   .text-pa{
+    margin-top: 0;
+    width: 100%;
+   }
+   .btn-cont>button , .faq-btn, .res-btn{
+    font-size: 18px;
+    font-weight: 300;
+   }
+   .btn-cont>button{
+    width: 90%;
+   }
+   .faq-btn{
+    width: 50%;
+   }
+   .res-btn{
+    width: 80%;
+   }
+   .btn-cont>span{
+    gap: 5px;
+    width: 80%;
+   }
+   .title-patient{
+    font-size: 26px;
+   }
+   
+}
+@media screen  and (max-width:450px){
+   .par-pa{
+    font-size: 12px;
+   }
+   .btn-cont>button{
+    font-size: 17px;
+   }
+}
+

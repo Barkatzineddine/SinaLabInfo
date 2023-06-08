@@ -1,0 +1,130 @@
+.intro{
+    background-size: cover;
+    background-image: url('../images/back.svg');
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+    padding: 10px 50px;
+    position: relative;
+    z-index: 10;
+}
+.intro-name{
+    
+    font-size: 96px;
+    width: 80%;
+    justify-content: center;
+   display: flex;
+
+}
+.back-text{
+    width: 80%;
+    justify-content: center;
+    display: flex;
+ ;
+    
+}
+
+.circles{
+    display: flex;
+    justify-content: space-evenly;
+   color: black;
+   text-align: center;
+   margin-top: -70px;
+   z-index:  20;
+    position: relative;
+}
+.blockcircle img{
+    box-sizing: border-box;
+    width: 100px;
+}
+
+
+@media screen  and (max-width:900px){
+    .intro-name{
+        font-size: 40px;
+        
+    }
+  
+    .intro{
+        
+        background-size: cover;
+    }
+    .circles{
+     justify-content: center;   
+    }
+}
+@media screen  and (max-width:1400px){
+    .intro-name{
+        font-size: 43px;
+        
+    }
+  
+    .intro{
+        
+        background-size: cover;
+       
+    }
+    .circles{
+        justify-content: space-evenly;
+    }
+    
+}
+@media screen  and (max-width:900px){
+    .blockcircle>img{
+        width: 80%;
+    }
+    .circles{
+        margin-top: -50px;
+       }
+       .blockcircle{
+        width: 100px;
+       }
+
+}
+@media screen  and (max-width:600px)
+{
+    .intro{
+        align-items: flex-start;
+        
+    }
+    .intro-name{
+        font-size: 36px;
+        margin-left: 0px;
+        width: 100%;
+    }
+    .back-text{
+        font-size: 14px;
+        width: 90%;
+        
+    }
+    .blockcircle>p{
+        font-size: 14px;
+    }
+}
+@media screen  and (max-width:450px){
+    .blockcircle>p{
+        font-size: 11px;
+    }
+   .blockcircle>img{
+    width: 60%;
+   }
+   .circles{
+    margin-top: -30px;
+   }
+
+   .intro-name{
+    font-size: 29px;
+    font-weight: 400px;
+    
+   }
+   .intro{
+    height: 70vh;
+    padding: 70px 20px 0;
+    align-items: center;
+   }
+
+}

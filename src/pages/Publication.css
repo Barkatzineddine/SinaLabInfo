@@ -1,0 +1,106 @@
+.pub-con-all{
+    display: flex;
+}
+.left-pub-con{
+    flex-basis: 70%;
+    padding: 70px 50px;
+}
+.left-pub-con>h2{
+    font-family: 'Poppins';
+font-style: italic;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+margin-bottom: 40px;
+}
+.phrase-into{
+    font-family: 'Poppins';
+font-style: italic;
+font-weight: 275;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+
+
+color: rgba(0, 0, 0, 0.82);
+}
+.auteur-into{
+    font-family: 'Poppins';
+font-style: italic;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+color: #9D9D9D;
+}
+.meduim-part1{
+    display: flex;
+    margin-top: 50px;
+    gap: 40px;
+}
+.meduim-part1>div>p{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+
+color: #454545;
+}
+.pub-img2{
+    margin-top: 30px;
+    display: flex;
+}
+.pub-text2{
+    display: flex;
+    justify-content: center;
+    width: 72%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #454545;
+    text-align: center;
+    margin: 20px auto;
+}
+@media screen and (max-width: 1200px) {
+    .meduim-part1{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1000px){
+    .pub-con-all{
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-pub-con{
+        padding: 70px 10px;
+    }
+    .right-pub-con{
+        width: 90%;
+    }
+
+}
+@media screen and (max-width: 560px){
+    .pub-img2{
+        width: 100%;
+    }
+    .pub-text2{
+width: 90%;
+    }
+    
+}
+@media screen and (max-width: 450px){
+    .right-pub-con{
+        width: 90%;
+    }
+    
+}
+
+img{
+    max-width: 600px;
+}
+
+.meduim-pub{
+    max-width: 300px;
+}

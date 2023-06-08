@@ -1,0 +1,163 @@
+.container-footer{
+    z-index: 12;
+   margin-top: 50px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    background: #740606;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  .container-footer .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 25px ;
+
+  }
+  .content .image-box{
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 16px;
+    
+    
+  }
+  .content .image-box img{
+    width: 80%;
+  }
+
+  .content form{
+    width: 40%;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+  }
+  .content .input-box{
+    height: 50px;
+    width: 70%;
+    margin: 16px 0;
+    position: relative;
+  }
+  .content .input-box input,.content .message-box textarea{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 13px;
+    outline: none;
+    padding-left: 16px;
+    background: white;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+ 
+  .content .input-box label{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #636c72;
+    font-size: 13px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  
+  .content .message-box{
+    min-height: 100px;
+    position: relative;
+    width: 70%;
+    margin: 16px 0;
+  }
+  .content .message-box textarea{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    outline: none;
+
+  }
+ 
+  .social-link{
+    
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  .image-box>div>h3, .image-box>h3{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 110%;
+text-align: center;
+color: #FFFFFF;
+  }
+  .image-box>div>p{
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 120%;
+
+
+text-align: center;
+
+color: #FFFFFF;
+
+  }
+  .button-box{
+    background: rgba(43, 99, 210, 0.6);
+box-shadow: 2px 5px 20px rgba(130, 130, 130, 0.68);
+border-radius: 28px;
+width: 50%;
+padding: 10px 20px;
+margin-block: 20px ;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+  }
+  .button-box>button{
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+  }
+  
+
+  @media (max-width:1200px) {
+    .content .image-box{
+      max-width: 60%;
+    }
+    .content{
+      padding: 10px 0;
+    }
+    .image-box{
+      align-items: center;
+      width: 80%;
+    }
+  }
+  @media (max-width:1000px) {
+    
+    .content form{
+    
+     
+      width: 100%;
+      margin: 30px;
+      
+      border-left:none ;
+    }
+    .container-footer .content{
+      flex-direction: column-reverse;
+    }
+  }

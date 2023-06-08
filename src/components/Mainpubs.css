@@ -1,0 +1,118 @@
+.main-pubs{
+    display: flex;
+}
+.meduim-pubs{
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    margin: 180px auto 40px 50px;
+    gap: 50px;
+}
+.meduim-pub{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+    gap: 30px;
+    max-height: 330px;
+    overflow: hidden;
+}
+.meduim-pub>h2,.big-pubs>h2,.small-pub>h2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+}
+.meduim-pub>p,.big-pubs>p,.small-pub>p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    
+    color: #454545;
+}
+.meduim-pub>img{
+    width: 300px;
+}
+.meduim-pub>h2{
+    text-align: left;
+    width: 90%;
+    max-width: 300px;
+}
+.big-pubs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 50%;
+    margin-top: 180px;
+}
+.big-pubs>h2{
+    width: 53%;
+    text-align: center;
+    margin-top: 40px;
+}
+.big-pubs>p{
+    width: 60%;
+    text-align: center;
+    margin-top: 30px;
+}
+.small-pubs{
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 180px;
+}
+.small-pub{
+    border-left:1px solid black ;
+    padding-left: 20px;
+}
+.small-pub>h2{
+    width: 70%;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 1100px){
+    .small-pubs{
+        display: none;
+    }
+    .main-pubs{
+        flex-direction: column-reverse;
+    }
+    .big-pubs{
+        margin-bottom: 100px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .meduim-pubs{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 0;
+        gap: 20px;
+    }
+    .meduim-pub{
+        align-items: center;
+    }
+}
+@media screen and (max-width: 700px){
+    .meduim-pubs{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 450px){
+    .meduim-pub>img{
+        width: 250px;
+    }
+    .big-pubs>h2{
+        width: 70%;
+    }
+    .big-pubs>p{
+        width: 85%;
+    }
+    .big-pubs>img{
+        width: 300px;
+    }
+}

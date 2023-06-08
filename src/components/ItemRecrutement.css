@@ -1,0 +1,36 @@
+.recrutemet-item-con{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #9D9D9D;
+}
+.recrutemet-item-con>div:nth-child(1) img {
+    width: 60px;
+}
+.recrutemet-item-con>div:nth-child(2){
+   width: 70%;
+}
+.recrutemet-item-con>div:nth-child(3)>a>button{
+    background: rgba(255, 255, 255, 0.04);
+border: 1px solid #9D9D9D;
+box-shadow: 0px 3px 5px rgba(49, 86, 140, 0.09);
+border-radius: 10px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+
+color: #9D9D9D;
+padding: 10px 13px;
+}
+@media screen and (max-width:650px){
+    .recrutemet-item-con{
+        flex-direction: column;
+    }
+    .recrutemet-item-con>div:nth-child(2){
+        width: 90%;
+    }
+}
